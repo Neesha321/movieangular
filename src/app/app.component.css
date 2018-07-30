@@ -1,0 +1,172 @@
+body{
+	margin: 0;
+}
+.front{
+	height:50px;
+	width:500px;
+	background-color:white;
+	position:absolute;
+	right:100px;
+	top:5px;
+    cursor: text;
+    z-index: 11111111;/*lukheko cha div so */
+   }
+
+    /* .front i{this command is used for icon displaying
+       position: absolute;
+        right: 20px;
+       top: 15px;
+        font-size: 20px;
+       left:100px; 
+    } */
+   
+input[type='search'] {
+    height:100%;
+	width:100%;
+	font-size: 20px;
+    cursor: text;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+button{
+ position: absolute;
+ float:left;
+ height:50px;
+ width:50px;
+}
+
+
+/*NavBar starts here*/
+
+.NavBar{
+	width: 100%;
+	height: 130px;
+	background-color: #092238;
+	z-index: 1;
+	position: relative;
+}
+
+.NavBarCon{
+	padding: 0px 300px;
+	height: 100%;
+	position: relative;
+}
+
+.NavBarCon ul{
+	margin: 0;
+	text-align: justify;
+	list-style: none;
+	position: absolute;
+	bottom: 0;
+}
+
+ul.ham{
+	right: 0;
+}
+
+ul.ham a{
+	padding: 25px;
+}
+
+
+.NavBarCon li{
+	float: left;
+	position: relative;
+}
+
+.NavBarCon a{
+	display: block;
+	font-family: Segoe UI;
+	text-transform: uppercase;
+	padding: 25px 45px;
+	transition: ease 0.3s all;
+	cursor: pointer;
+	user-select: none;
+	font-weight: 500;
+	color: white;
+}
+
+.NavBarCon a:hover,
+.hamburger-items li a:hover{
+	background-color: white;
+	color: black;
+}
+
+.menu-hamburger{
+	display: none;
+}
+
+.hamburger-items{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+	display: none;
+	
+}
+
+.DropDownCon{
+	position: absolute;
+	width: 100%;
+	background-color: #23496b;
+	text-align: center;
+	display: none;
+}
+
+.DropDownCon a{
+	padding: 20px 0px;
+}
+
+.dropdown:hover > .DropDownCon{
+	display: block;
+}
+
+.hamburger-items li{
+	width: 100vw;
+
+	background-color: #194163;
+	
+}
+
+.hamburger-items a{
+	display: block;
+	font-family: Segoe UI;
+	text-transform: uppercase;
+	transition: ease 0.3s all;
+	cursor: pointer;
+	user-select: none;
+	font-weight: 500;
+	color: white;
+	padding: 10px 0px;
+}
+
+.display-some{
+	display: block;
+}
+
+.NavBar .logo{
+	padding-left: 30px;
+	color: white;
+	transition: all 0.3s ease;
+	position: absolute;
+	bottom: 25px;
+	font-family: Segoe UI;
+	font-size: 60px;
+	letter-spacing: -1.95px;
+	font-weight: 400;
+	line-height: 46px;
+	text-align: right;
+	cursor: pointer;
+	z-index: 2;
+}
+
+.thi{
+	font-weight: 100;
+	padding-left: 5px;
+}
+
+.bol{
+	font-weight: 700;
+}
+
+
+/* NavBar End here */

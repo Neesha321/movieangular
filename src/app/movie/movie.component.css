@@ -1,0 +1,287 @@
+
+
+.sec1{
+	width: 100%;
+	font-size: 20px;
+}
+
+.sec1 h1 {
+	color: #484848;
+	font-size: 3.6em;
+	text-align: center;
+	font-family: Segoe UI;
+	font-weight: 500;
+	letter-spacing: -1px;
+	margin-top: 60px;
+	margin-bottom: 0;
+}
+
+.sec1 .IndexCon{
+	padding-top:50px;
+	padding-bottom: 80px;
+	max-width: 1600px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	font-size: 25px;
+}
+
+.sec1 .IndexCon .MainBlock{
+	width: 20em;
+	height: 21em;
+	padding-top: 0px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.sec1 .IndexCon .MainBlock .movie{
+	width: 20em;
+	height: 10.5em;
+	position: relative;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+.movie{
+	cursor: pointer;
+}
+
+.movie:hover > .overlay{
+	opacity: 0.5;
+}
+
+.movie:hover img{
+	transform: scale(1.4)
+	
+}
+
+.sec1 .IndexCon .SideBlock{
+	width: 15em;
+	height: 15em;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.sec1 .IndexCon .SideBlock .movie{
+	width: 7.5em;
+	height: 7.5em;
+	position: relative;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+.sec1 .IndexCon .movie h3{
+	position: absolute;
+	color: white;
+	font-family: Segoe UI;
+	width: 100%;
+	margin: 0;
+	z-index: 3;
+}
+
+.sec1 .IndexCon .movie img{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	transition: all 5s ease-in-out;
+}
+
+.sec1 .IndexCon .Part2{
+	align-self: flex-end;
+}
+
+.sec1 .overlay{
+	background-color: red;
+	opacity: 0.35;
+	width: 100%;
+	height: 100%;
+	transition: opacity 0.3s ease;
+}
+
+.sec2{
+	background: #094257;
+	font-size: 20px;
+}
+
+.sec2 h1{
+	color: white;
+	font-size: 3.5em;
+	text-align: center;
+	font-family: Segoe UI;
+	font-weight: 500;
+	letter-spacing: -1px;
+	padding-top: 40px;
+	margin-bottom: 20px;;
+}
+
+.sec2 .IndexCon{
+	display: flex;
+	justify-content: space-between;
+	max-width: 900px;
+	margin: 0 auto;
+	position: relative;
+	font-size: .8em;
+}
+
+.sec2 .IndexCon .line{
+	width: 1px;
+	height: 100%;
+	border-left: 1px dashed #092238;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+
+
+
+
+.sec2 .IndexCon .inTh{
+	max-width: 300px;
+	opacity: 0;
+	color: white;
+	font-family: Segoe UI;
+	text-align: center;
+}
+
+.sec2 .IndexCon .inTh img{
+	width: 14em;
+	margin: 00px 10px;
+}
+.SIL{
+	animation-name: slideInLeft;
+	animation-duration: .3s;
+	animation-fill-mode: forwards;
+}
+
+.SIR{
+	animation-delay: .2s;
+	animation-name: slideInRight;
+	animation-duration: .3s;
+	animation-fill-mode: forwards;
+}
+
+.movie{
+	animation-name: slideIn;
+	animation-duration: .2s;
+	animation-fill-mode: forwards;
+	opacity: 0;
+}
+
+.Part1 .movie:nth-of-type(1){ animation-delay: .1s; }
+.Part1 .movie:nth-of-type(2){ animation-delay: .2s; }
+.Part1 .movie:nth-of-type(3){ animation-delay: .3s; }
+.Part1 .movie:nth-of-type(4){ animation-delay: .4s; }
+.MainBlock .movie:nth-of-type(1){ animation-delay: .5s; }
+.MainBlock .movie:nth-of-type(2){ animation-delay: .6s; }
+.Part2 .movie:nth-of-type(1){ animation-delay: .7s; }
+.Part2 .movie:nth-of-type(2){ animation-delay: .8s; }
+.Part2 .movie:nth-of-type(3){ animation-delay: .9s; }
+.Part2 .movie:nth-of-type(4){ animation-delay: 1s; }
+
+@media (max-width: 1400px){
+	.sec1 .IndexCon{
+		font-size: 20px;
+	}
+	.sec1{
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 1100px){
+	.sec1 .IndexCon{
+		font-size: 18px;
+	}
+	.sec1{
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 960px){
+
+	.NavBar .items{
+		width: 100vw;
+		background-color: blue;
+		display: none;
+	}
+	.menu-hamburger{
+		display: block;
+	}
+	
+	.NavBarCon{
+		padding: 0;
+	}
+	
+	.SideBlock{
+		margin: 10px;
+	}
+	
+	.sec1 .IndexCon{
+		font-size: 26px;
+	}
+	.sec1{
+		font-size: 15px;
+		line-height: 46px;
+	}
+	.DropDownCon{
+		position: relative;
+	}
+}
+
+@media (max-width: 620px){
+	.line{
+		display: none;
+	}
+	
+	.sec2 .IndexCon{
+		justify-content: center;
+	}
+	
+	.sec2{
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 420px){
+	.sec1 .IndexCon{
+		font-size: 22px;
+	}
+	
+	.sec1{
+		font-size: 10px;
+		line-height: 35px;
+	}
+}
+
+@media (min-width: 961px){
+	.hamburger-items{
+		display: none;
+	}
+}
+
+@keyframes slideIn {
+	0% {transform: translate(0px,50px); opacity: 0;}
+	100% {transform: translate(0px,0px); opacity: 1;}
+}
+
+@keyframes slideInRight {
+	from { transform: translate(50px, 0px); opacity: 0;}
+	to { transform: translate(0px, 0px); opacity: 1;}
+}
+
+@keyframes slideInLeft {
+	from { transform: translate(-50px, 0px); opacity: 0;}
+	to { transform: translate(0px, 0px); opacity: 1;}
+}
+img {
+	display: flex;
+	flex:wrap;
+}
